@@ -992,6 +992,18 @@
       ]
     },
     {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WtEPSCRWrzMh"
+      },
+      "source": [
+        "ten_worst_teams = team_pts_mean.nsnallest(10)\n",
+        "ten_worst_teams.plot.bar(legent=TRUE)\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
       "cell_type": "markdown",
       "metadata": {
         "id": "dW8b6nxfG18t"
