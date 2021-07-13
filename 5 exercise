@@ -1096,6 +1096,25 @@
       ]
     },
     {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OkuQ3VwttYlv"
+      },
+      "source": [
+        "#Choosing Los Angeles Lakers from all teams:\n",
+        "needed_data = df2.filter(['fran_id', 'year_id', 'game_result'])\n",
+        "\n",
+        "LALakers = needed_data['fran_id'] == 'Lakers'\n",
+        "Win_LALakers = needed_data['Lakers']\n",
+        "\n",
+        "Wins_numb = Win_LALakers[Win_LALakers['game_result'] == 'W'].groupby('year_id')['game_result'].count()\n",
+        "\n",
+        "Wins_numb.plot()\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
       "cell_type": "markdown",
       "metadata": {
         "id": "dpM8Q3Q5G18u"
