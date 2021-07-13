@@ -1023,6 +1023,19 @@
       ]
     },
     {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Mm6E3vFTsIN7"
+      },
+      "source": [
+        "#Firstly i will sort teams by average points, then i will vizualize that data\n",
+        "teams_by_pts = team_pts_mean.sort.value()\n",
+        "teams_by_pts.plot.bar(legend = TRUE)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
       "cell_type": "markdown",
       "metadata": {
         "id": "OVB5_ciGG18t"
