@@ -1057,6 +1057,17 @@
       ]
     },
     {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7susyWRas_Af"
+      },
+      "source": [
+        "teams_by_pts.plot.hist(bins = 20, legend = TRUE)\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
       "cell_type": "markdown",
       "metadata": {
         "id": "GO1FSYhwG18t"
