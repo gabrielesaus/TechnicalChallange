@@ -852,7 +852,15 @@
         "\n",
         "#Quantiles\n",
         "QSeq = np.arange(0, 1, 0.05)\n",
-        "quantile = df2['pts'].quantile(QSeq)"
+        "quantile = df2['pts'].quantile(QSeq)\n",
+        "\n",
+        "#Distribution\n",
+        "standart_dev = df2['pts'].std()\n",
+        "\n",
+        "#Calculating coefficient of vairantion\n",
+        "print(standart_dev / avg_pts)\n",
+        "\n",
+        "\n"
       ],
       "execution_count": null,
       "outputs": []
