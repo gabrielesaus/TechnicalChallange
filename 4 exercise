@@ -914,7 +914,9 @@
       "source": [
         "np.testing.assert_array_almost_equal(five_best_teams[\"pts\"].values, [115.44651163, 114.05131414, 112.65454545, 112.35449735, 111.62529551])\n",
         "\n",
-        "team_pts_mean = df2.groupby('fran.id')['pts'].mean\n"
+        "team_pts_mean = df2.groupby('fran.id')['pts'].mean\n",
+        "\n",
+        "five_best_teams = team_pts_mean.nlargest(5)\n"
       ],
       "execution_count": null,
       "outputs": []
